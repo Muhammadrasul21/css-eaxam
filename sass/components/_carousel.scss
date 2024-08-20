@@ -1,77 +1,85 @@
-.carousel{
-    &__title{
+.carousel {
+    &__title {
         display: flex;
         justify-content: space-between;
         margin-top: 80px;
-    
     }
-    &__desc{
+
+    &__desc {
         display: flex;
         flex-direction: column;
-       p{
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 56px;
-       }
-       span{
-        font-weight: 400;
-        font-size: 24px;
-        color: #777E90;
-        margin-top: 12px;
-       }
+
+        p {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 56px;
+        }
+
+        span {
+            font-weight: 400;
+            font-size: 24px;
+            color: #777E90;
+            margin-top: 12px;
+        }
     }
-    &__wrapper{
+
+    &__wrapper {
         margin-top: 50px;
         display: flex;
-        gap: 32px; 
-        overflow: auto;
-        
+        gap: 32px;
+        overflow-x: auto;
         margin-bottom: 50px;
+        white-space: nowrap;
     }
-    &__card{
-        display: flex;
+
+    &__cardes {
+        display:block;
         flex-direction: column;
-        width: 335px;
-        height: 335px;
-        p{
+        width: 336px;
+        height: 336px;
+        p {
             font-weight: 600;
             font-size: 24px;
             margin-top: 20px;
         }
-        span{
+
+        span {
             color: #777E90;
             margin-top: 10px;
             font-size: 12px;
         }
-        img{
-            max-width: 100%;
 
+        img {
+            max-width: 100%;
+            max-height: 100%;
         }
     }
 
-    &__button{
+    &__button {
         background-color: inherit;
         color: #000;
         border: 1px solid #000;
         width: 150px;
     }
-    &__icon{
+
+    &__icon {
         display: flex;
         gap: 10px;
-        i{
-            border: 1px solid #000;
-        padding: 20px;
-        height: 50px;
-        width: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        &:hover{
-            background-color: #000;
-            color: #fff;
-        }
-        }
 
+        i {
+            border: 1px solid #000;
+            padding: 20px;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+
+            &:hover {
+                background-color: #000;
+                color: #fff;
+            }
+        }
     }
 }
