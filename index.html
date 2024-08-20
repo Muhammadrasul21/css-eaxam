@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleet</title>
+    <link rel="icon" href="./assets/Fleet symbol.svg">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header beginning -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <!-- Navbar elements -->
+                <div class="navbar__logo">
+                    <img src="./assets/logo.svg" alt="">
+                    <hr>
+                    <select name="Travelers" id="">
+                        <option>Travelers</option>
+                        <option>Shop</option>
+                        <option>Blog</option>
+                        <option>Ticket</option>
+                        <option>Hotel</option>
+                    </select>
+                </div>
+                <div class="navbar__collection">
+                    <ul>
+                        <li>
+                            <a href="#">Support</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-globe"></i> Language</a>
+                        </li>
+                    </ul>
+                    <!-- Button hover and active states -->
+                    <button class="navbar__btn">List your property </button>
+
+                    <div class="navbar__item">
+                        <i class="fa-solid fa-bell"></i>
+                        <img src="assets/avatar (1).png" alt="">
+
+                        <!-- Navbar hamburger responsive for 590px -->
+                        <div class="navbar__hamburger">
+                            <div onclick="showHamburger()" class="navbar__hamburger__wrapper">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="navbar__sidebar">
+                                <div>
+                                    <div class="navbar__sidebar__close">
+                                        <div onclick="closeHamburger()" class="exit">
+                                            &#10006;
+                                            <ul class="navbar__sidebar__wrapper">
+                                                <li>
+                                                    <a href="#">Support</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fa-solid fa-globe"></i> Language</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Category</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Shop</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Contact</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Visit</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">About us</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Call</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Privacy policy</a>
+                                                </li>
+                                                <button class="navbar__btn">List your property </button>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Startf of main -->
+    <main>
+        <section class="hero">
+            <div class="containersecond">
+                <div class="hero__wrapper">
+                    <div class="hero__title">
+                        <h1>Car rentals </h1>
+                        <p>Find and book a great experience.</p>
+                        <button class="btn">Start your search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tourism">
+            <div class="container">
+                <div class="tourism__wrapper">
+                    <ul class="tourism__collection">
+                        <li>
+                            <a href="#">Stays</a>
+                        </li>
+                        <li>
+                            <a href="#">Flight</a>
+                        </li>
+                        <li>
+                            <a href="#">Cars</a>
+                        </li>
+                        <li>
+                            <a href="#">Things to do</a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="tourism__button">
+                        <button class="btn">Return to same location</button>
+                        <button class="btn">Return to same different location</button>
+                    </div>
+                    <div class="tourism__items">
+                        <div class="tourism__desc">
+                            <p> <i class="fa-regular fa-paper-plane"></i> Pickup location</p>
+                            <span>Where are you?</span>
+                        </div>
+                        <div class="tourism__desc">
+                            <p> <i class="fa-regular fa-calendar-minus"></i> Tue, May 11</p>
+                            <span>10:00 AM</span>
+                        </div>
+                        <div class="tourism__desc">
+                            <p><i class="fa-regular fa-calendar-minus"></i> Fri, May 11</p>
+                            <span>10:00 AM</span>
+                        </div>
+                        <div class="tourism__desc">
+                            <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="carousel">
+            <div class="container">
+                <div class="carousel__title">
+                    <div class="carousel__desc">
+                        <p>Popular destinations</p>
+                        <span>for car rentals</span>
+                    </div>
+                    <div class="carousel__icon">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="carousel__wrapper">
+                    <div class="carousel__card">
+                        <img src="./assets/img.png" alt="">
+                        <p>Paris</p>
+                        <span>Car rentals in 86 pickup locations</span>
+                        <div>
+                        </div>
+                    </div>
+                    <div class="carousel__card">
+                        <img src="./assets/london.png" alt="">
+                        <p>London</p>
+                        <span>Car rentals in 86 pickup locations</span>
+                        <div>
+                        </div>
+                    </div>
+                    <div class="carousel__card">
+                        <img src="./assets/ams.png" alt="">
+                        <p>Ams</p>
+                        <span>Car rentals in 86 pickup locations</span>
+                        <div>
+                        </div>
+                    </div>
+                    <div class="carousel__card">
+                        <img src="./assets/img.png" alt="">
+                        <p>Paris</p>
+                        <span>Car rentals in 86 pickup locations</span>
+                        <div>
+                        </div>
+                    </div>
+                    <div class="carousel__card">
+                        <img src="./assets/london.png" alt="">
+                        <p>London</p>
+                        <span>Car rentals in 86 pickup locations</span>
+                        <div>
+                        </div>
+                    </div>
+                    <div class="carousel__card">
+                        <img src="./assets/ams.png" alt="">
+                        <p>Ams</p>
+                        <span>Car rentals in 86 pickup locations</span>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn carousel__button">Show more &#10095;</button>
+            </div>
+        </section>
+        <section class="explore">
+            <div class="container">
+                <div class="explore__wrapper">
+                    <div class="explore__title">
+                        <span>supercharge your planning powers</span>
+                        <h3>Rent a car in minutes with Fleet</h3>
+                        <p>Stacks is a production-ready library of stackable content blocks built in React Native.</p>
+                        <div class="explore__input">
+                            <input type="text" placeholder="Enter your phone number">
+                            <button class="btn"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="explore__image">
+                        <img src="./assets/phone.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cards">
+            <div class="container">
+                <div class="carousel__title">
+                    <div class="carousel__desc">
+                        <p>Popular destinations</p>
+                        <span>for car rentals</span>
+                    </div>
+                    <div class="carousel__icon">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="cards__wrapper">
+                    <div class="carousel__card">
+                        <img src="./assets/img.png" alt="">
+                        <p>Paris</p>
+                        <span>Car rentals in 86 pickup locations</span>
+                        <div>
+                        </div>
+                    </div>
+                    <div class="carousel__card">
+                        <img src="./assets/london.png" alt="">
+                        <p>London</p>
+                        <span>Car rentals in 86 pickup locations</span>
+                        <div>
+                        </div>
+                    </div>
+                    <div class="carousel__card">
+                        <img src="./assets/ams.png" alt="">
+                        <p>Ams</p>
+                        <span>Car rentals in 86 pickup locations</span>
+                        <div>
+                        </div>
+                    </div>
+                    <div class="carousel__card">
+                        <img src="./assets/img.png" alt="">
+                        <p>Paris</p>
+                        <span>Car rentals in 86 pickup locations</span>
+                        <div>
+                        </div>
+                    </div>
+                    <div class="carousel__card">
+                        <img src="./assets/london.png" alt="">
+                        <p>London</p>
+                        <span>Car rentals in 86 pickup locations</span>
+                        <div>
+                        </div>
+                    </div>
+                    <div class="carousel__card">
+                        <img src="./assets/ams.png" alt="">
+                        <p>Ams</p>
+                        <span>Car rentals in 86 pickup locations</span>
+                        <div>
+                        </div>
+                    </div>
+                    <div class="carousel__card">
+                        <img src="./assets/img.png" alt="">
+                        <p>Paris</p>
+                        <span>Car rentals in 86 pickup locations</span>
+                        <div>
+                        </div>
+                    </div>
+                    <div class="carousel__card">
+                        <img src="./assets/london.png" alt="">
+                        <p>London</p>
+                        <span>Car rentals in 86 pickup locations</span>
+                        <div>
+                        </div>
+                    </div>
+                    <div class="carousel__card">
+                        <img src="./assets/ams.png" alt="">
+                        <p>Ams</p>
+                        <span>Car rentals in 86 pickup locations</span>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn carousel__button">Show more &#10095;</button>
+            </div>
+        </section>
+
+    </main>
+    <!-- Javascript connected-->
+    <script src="./main.js"></script>
+</body>
+
+</html>
