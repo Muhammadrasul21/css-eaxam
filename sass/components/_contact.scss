@@ -1,16 +1,73 @@
-.contact{
-    border: 1px solid red;
-    &__title{
-   p{
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 12px;
-    font-family: poppins;
-   }
-   span{
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 56px;
-   }
+.contact {
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        p {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 12px;
+            font-family: poppins;
+
+        }
+
+        span {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 56px;
+        }
+        button{
+            width: 150px;
+            margin: auto;
+            margin-top: 32px;
+        }
+    }
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 100px;
+        grid-gap: 25px;
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        padding:0 30px;
+        background-color: #F4F5F6;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        img{
+            width: 50px;
+            height: 50px;
+        margin-top: 70px;
+        margin-bottom: 36px;
+        }
+        b{
+            font-family: poppins;
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
+        p{
+            color: #777E90;
+            margin-bottom: 65px;
+        }
+    }
+    &__category{
+        margin-top: 200px;
+        margin-bottom: 150px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &__categories{
+        height: 50px;
+        padding: 95px;
+        border-right:1px solid #777E90;
+        border-bottom: 1px solid #777E90;
+    }
+    .icon{
+        border-right: none;
+    }
+    .bottom{
+        border-bottom: none;
     }
 }

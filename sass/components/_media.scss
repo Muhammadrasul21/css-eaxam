@@ -15,8 +15,15 @@
             place-items: center;
         }
     }
+    .contact{
+        &__wrapper{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
 }
+
 @media(max-width: 990px){
+    
     .navbar{
         ul{
             display: none;
@@ -27,6 +34,21 @@
             &__desc:nth-child(2){
                 display: none;
             }
+    }
+    .contact{
+        &__category{
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 5px;
+        }
+        &__categories{
+            border: 1px solid #777e90;
+        }
+        .icon{
+            border-right: 1px solid #777e90;
+        }
+        .bottom{
+            border-bottom: 1px solid #777e90;
+        }
 
     }
 }
@@ -43,6 +65,14 @@
         grid-template-columns: 1fr;
     }
  } 
+ .contact{
+    &__wrapper{
+        grid-template-columns: 1fr;
+    }
+    &__category{
+        grid-template-columns: 1fr;
+    }
+ }
 }
 @media (max-width: 590px) {
  .navbar{
