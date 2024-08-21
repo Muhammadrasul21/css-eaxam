@@ -35,8 +35,9 @@
     &__cardes {
         display:block;
         flex-direction: column;
+        min-width: 336px;
         width: 336px;
-        height: 336px;
+        min-height: 336px;
         p {
             font-weight: 600;
             font-size: 24px;
