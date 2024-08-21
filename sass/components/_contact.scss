@@ -63,6 +63,9 @@
         padding: 95px;
         border-right:1px solid #777E90;
         border-bottom: 1px solid #777E90;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .icon{
         border-right: none;
