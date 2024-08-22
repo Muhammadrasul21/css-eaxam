@@ -1,9 +1,9 @@
 const hamburger = document.querySelector(".navbar__sidebar");
 
 function showHamburger() {
-    hamburger.style.right = "0";
+    hamburger.style.display = "block"
 }
 
 function closeHamburger() {
-    hamburger.style.right = "-100%";
+    hamburger.style.display = "none"
 }
