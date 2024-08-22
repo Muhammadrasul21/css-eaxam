@@ -1,0 +1,31 @@
+.footer {
+    border: 1px solid rgba(128, 128, 128, 0.562);
+    max-width: 100%;
+
+    &__wrapper {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        li {
+
+            height: 60px;
+            width: 160px;
+        }
+    }
+
+    hr {
+        opacity: .3;
+    }
+
+    p {
+        padding-bottom: 50px;
+        padding-top: 20px;
+    }
+}

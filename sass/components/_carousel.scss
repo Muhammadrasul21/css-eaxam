@@ -30,6 +30,9 @@
         overflow-x: auto;
         margin-bottom: 50px;
         white-space: nowrap;
+        &::-webkit-scrollbar{
+            width: 5px;
+        }
     }
 
     &__cardes {

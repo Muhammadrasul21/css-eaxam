@@ -1,124 +1,176 @@
 @media (max-width:1200px) {
-    .explore{
-        &__wrapper{
+    .explore {
+        &__wrapper {
             flex-direction: column-reverse;
             align-items: center;
 
         }
-        &__title{
+
+        &__title {
             text-align: center;
         }
     }
-    .cards{
-        &__wrapper{
+
+    .cards {
+        &__wrapper {
             grid-template-columns: repeat(2, 1fr);
             place-items: center;
         }
     }
-    .contact{
-        &__wrapper{
+
+    .contact {
+        &__wrapper {
             grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .footer {
+        &__item {
+            display: none;
         }
     }
 }
 
-@media(max-width: 990px){
-    
-    .navbar{
-        ul{
+@media(max-width: 990px) {
+
+    .navbar {
+        ul {
             display: none;
         }
     }
-    .tourism{
-      
-            &__desc:nth-child(2){
-                display: none;
-            }
+
+    .tourism {
+
+        &__desc:nth-child(2) {
+            display: none;
+        }
     }
-    .contact{
-        &__category{
+
+    .contact {
+        &__category {
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 5px;
         }
-        &__categories{
+
+        &__categories {
             border: 1px solid #777e90;
         }
-        .icon{
+
+        .icon {
             border-right: 1px solid #777e90;
         }
-        .bottom{
+
+        .bottom {
             border-bottom: 1px solid #777e90;
         }
 
     }
 }
+
 @media (max-width:850px) {
-  .tourism{
-    &__desc:first-child{
-        display: none;
-    }
-  }   
-}
-@media (max-width:750px) {
- .cards{
-    &__wrapper{
-        grid-template-columns: 1fr;
-    }
- } 
- .contact{
-    &__wrapper{
-        grid-template-columns: 1fr;
-    }
-    &__category{
-        grid-template-columns: 1fr;
-    }
- }
-}
-@media (max-width: 590px) {
- .navbar{
-    &__logo{
-        hr,
-        select{
+    .tourism {
+        &__desc:first-child {
             display: none;
         }
+    }
+}
 
+@media (max-width:750px) {
+    .cards {
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
     }
-    button{
-        display: none;
-    }
- }    
- .navbar__hamburger{
-    display: block;
- }
- .tourism{
-    &__button{
-        flex-direction: column;
-    }
-    &__items{
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    &__desc{
-        width: 200px;
-    }
-    &__collection{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        place-content: center;
-    }
- }
-}
-@media (max-width:400px)  {
-.carousel{
-    &__icon{
-        display: none;
-    }
-}
-.hero{
-    &__title{
-        h1{
-            font-size: 50px;
+
+    .contact {
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+
+        &__category {
+            grid-template-columns: 1fr;
         }
     }
 }
+
+@media (max-width: 590px) {
+    .navbar {
+        &__logo {
+
+            hr,
+            select {
+                display: none;
+            }
+
+        }
+
+        button {
+            display: none;
+        }
+    }
+
+    .navbar__hamburger {
+        display: block;
+    }
+
+    .tourism {
+        &__button {
+            flex-direction: column;
+        }
+
+        &__items {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        &__desc {
+            width: 200px;
+        }
+
+        &__collection {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            place-content: center;
+        }
+    }
+
+    .footer {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__input {
+            p {
+                display: none;
+            }
+        }
+    }
+
+    .employee {
+        &__items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__title {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .carousel {
+        &__icon {
+            display: none;
+        }
+    }
+
+    .hero {
+        &__title {
+            h1 {
+                font-size: 50px;
+            }
+        }
+    }
 }
