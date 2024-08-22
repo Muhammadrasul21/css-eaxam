@@ -5,5 +5,5 @@ function showHamburger() {
 }
 
 function closeHamburger() {
-    hamburger.style.right = "-50%";
+    hamburger.style.right = "-100%";
 }
